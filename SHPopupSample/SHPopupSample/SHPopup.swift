@@ -379,7 +379,7 @@ extension UIViewController {
         if let popupView = popupView {
             let frame = popupView.frame
             popupView.frame.origin.y = mainView.frame.origin.y - popupView.frame.height
-            UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+            UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.6, options: .curveEaseIn, animations: {
                 popupView.frame = frame
             }, completion: nil)
         }
@@ -390,7 +390,7 @@ extension UIViewController {
         if let popupView = popupView {
             let frame = popupView.frame
             popupView.frame.origin.y = mainView.frame.height + popupView.frame.height
-            UIView.animate(withDuration: 0.6, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+            UIView.animate(withDuration: 0.6, delay: 0.0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.6, options: .curveEaseIn, animations: {
                 popupView.frame = frame
             }, completion: nil)
         }

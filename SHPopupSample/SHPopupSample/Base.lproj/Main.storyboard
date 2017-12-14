@@ -364,7 +364,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIL-YU-9L8">
-                                <rect key="frame" x="0.0" y="517" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="477" width="375" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a sample popup like an alert view using SHPopup" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozi-n1-MSt">
                                         <rect key="frame" x="30" y="87" width="315" height="55"/>
@@ -413,12 +413,28 @@
                                     <constraint firstItem="ozi-n1-MSt" firstAttribute="top" secondItem="9sI-FE-ozh" secondAttribute="bottom" constant="8" id="kxE-Od-G9t"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeW-1A-iJ2">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.1647058824" green="0.1647058824" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="M38-hA-eYt"/>
+                                </constraints>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelAction:" destination="8Gs-Vh-dpY" eventType="touchUpInside" id="lhm-Rb-vlv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JeW-1A-iJ2" firstAttribute="leading" secondItem="Yih-gH-KVa" secondAttribute="leading" id="Eiv-Y9-g4D"/>
                             <constraint firstItem="RIL-YU-9L8" firstAttribute="trailing" secondItem="Yih-gH-KVa" secondAttribute="trailing" id="OKq-FK-1me"/>
                             <constraint firstItem="RIL-YU-9L8" firstAttribute="leading" secondItem="Yih-gH-KVa" secondAttribute="leading" id="Ob7-k8-3zZ"/>
-                            <constraint firstItem="RIL-YU-9L8" firstAttribute="bottom" secondItem="Yih-gH-KVa" secondAttribute="bottom" id="cfB-3d-yn1"/>
+                            <constraint firstItem="JeW-1A-iJ2" firstAttribute="top" secondItem="RIL-YU-9L8" secondAttribute="bottom" id="hcu-Kz-5vp"/>
+                            <constraint firstItem="JeW-1A-iJ2" firstAttribute="trailing" secondItem="Yih-gH-KVa" secondAttribute="trailing" id="o6G-eK-sin"/>
+                            <constraint firstItem="Yih-gH-KVa" firstAttribute="bottom" secondItem="JeW-1A-iJ2" secondAttribute="bottom" id="oAs-nR-otp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yih-gH-KVa"/>
                     </view>

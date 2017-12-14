@@ -38,7 +38,7 @@ class SHPopupMainVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0{
-            return 3
+            return 4
         }
         return 5
     }
@@ -135,10 +135,11 @@ class SHPopupMainVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
             self.presentPopup(controller: popupVC!, completion: nil)
         case 1,2:
             let popupVC = setPopupVC(storyboradID: "Main", viewControllerID: "SHSamplePopupThreeVC") as? SHSamplePopupThreeVC
+            popupVC?.Sample3Delegate = self
             popupVC?.popupAlign = popupAlignmentType
             popupVC?.popupAnimation = popupAnimationType
             popupVC?.touchDismiss = true
-            popupVC?.popupSize = CGSize(width: view.frame.width-40, height: 200)
+            popupVC?.popupSize = CGSize(width: view.frame.width-40, height: 240)
             self.presentPopup(controller: popupVC!, completion: nil)
         default:
             let popupVC = setPopupVC(storyboradID: "Main", viewControllerID: "SHPopupSampleTwoVC") as? SHPopupSampleTwoVC

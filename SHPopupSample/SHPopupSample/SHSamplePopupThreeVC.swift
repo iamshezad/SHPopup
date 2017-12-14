@@ -8,6 +8,9 @@ import UIKit
 class SHSamplePopupThreeVC: UIViewController {
 
     @IBOutlet var tickView: UIView!
+    
+    var Sample3Delegate: PopupSampleOneProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,5 +24,8 @@ class SHSamplePopupThreeVC: UIViewController {
     }
     
 
-   
+    @IBAction func cancelAction(_ sender: UIButton) {
+        Sample3Delegate?.dismiss()
+    }
+    
 }
