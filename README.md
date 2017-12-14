@@ -3,15 +3,12 @@ SHPop is lightweight library used for popup view
 
 ### Sample One
 <img src="/Screenshots/SampleOne.gif" />
-<img src="/Screenshots/SampleOne.png" />
 
 ### Sample Two
 <img src="/Screenshots/SampleTwo.gif" />
-<img src="/Screenshots/SampleTwo.png" />
 
 ### Sample Three
 <img src="/Screenshots/SampleThree.gif" />
-<img src="/Screenshots/SampleThree.png" />
 
 ## Installation
 
