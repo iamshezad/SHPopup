@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "SHTransition"
+  s.name         = "SHPopup"
   s.version      = "1.0"
   s.summary      = "A framework for popup in iOS"
   s.description  = "A lightweight framework for using popup view"
