@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		02526F051FE273A500E563F2 /* SHPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 02526F031FE273A500E563F2 /* SHPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02526F0C1FE273BF00E563F2 /* SHPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02526F0B1FE273BF00E563F2 /* SHPopup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02526F001FE273A500E563F2 /* SHPopup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHPopup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02526F031FE273A500E563F2 /* SHPopup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHPopup.h; sourceTree = "<group>"; };
 		02526F041FE273A500E563F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02526F0B1FE273BF00E563F2 /* SHPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHPopup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		02526F021FE273A500E563F2 /* SHPopup */ = {
 			isa = PBXGroup;
 			children = (
+				02526F0B1FE273BF00E563F2 /* SHPopup.swift */,
 				02526F031FE273A500E563F2 /* SHPopup.h */,
 				02526F041FE273A500E563F2 /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					02526EFF1FE273A500E563F2 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02526F0C1FE273BF00E563F2 /* SHPopup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		02526F091FE273A500E563F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -261,10 +267,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SHPopup/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.SHPopup;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,6 +281,7 @@
 		02526F0A1FE273A500E563F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -281,6 +290,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SHPopup/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.SHPopup;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

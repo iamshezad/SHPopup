@@ -2,9 +2,6 @@
 //  SHPopup.h
 //  SHPopup
 //
-//  Created by Focaloid Technologies on 14/12/17.
-//  Copyright © 2017 Focaloid Technologies. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 
