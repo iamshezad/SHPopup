@@ -11,7 +11,7 @@ SHPop is lightweight library used for popup view
 <img src="/Screenshots/SampleThree.gif" />
 
 ## Features
-#### SHPopup supports multiple popups inside a popup 
+#### SHPopup supports a popup inside a another popup without dismissing
 #### SHPopup is customizable 
 
 ## Installation
