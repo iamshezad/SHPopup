@@ -16,7 +16,7 @@ SHPop is lightweight library used for popup view
 
 ## Installation
 
-Just drag and drop the SHPop folder to your project.
+Just drag and drop the SHPop.swift file from SHPopup folder to your project.
 
 ## Usage
 
