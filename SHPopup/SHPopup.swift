@@ -211,12 +211,12 @@ extension UIViewController {
         
         let overlayView = UIView(frame: mainView.bounds)
         if let overlay = controller.overlayColor {
-             overlayView.backgroundColor = overlay
+            overlayView.backgroundColor = overlay
         }else{
             overlayView.backgroundColor = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 0.5)
         }
         containerView.addSubview(overlayView)
-
+        
         let dismissButton = UIButton(frame: mainView.bounds)
         containerView.addSubview(dismissButton)
         if controller.touchDismiss ?? true{
@@ -301,7 +301,7 @@ extension UIViewController {
         return nil
     }
     
-    //Remove popup 
+    //Remove popup
     fileprivate func removeAllChildViewController() {
         self.childViewControllers.forEach({ (controller) in
             controller.view.removeFromSuperview()
@@ -400,7 +400,7 @@ extension UIViewController {
     fileprivate func toNone() {
         if let popupView = popupView{
             UIView.animate(withDuration: 0.2, animations: {
-                 popupView.alpha = 0
+                popupView.alpha = 0
             }, completion: { (animated) in
                 self.removeContentView()
             })
