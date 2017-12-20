@@ -15,6 +15,8 @@ Pod::Spec.new do |s|
   s.source_files  = "SHPopup/*.{swift,h,m}",
 
   s.ios.deployment_target = '9.0'
+	
+  s.platform :ios
 
  
 end
