@@ -15,10 +15,14 @@ SHPop is lightweight library used for popup view
 #### SHPopup is customizable 
 
 ## Installation
-
+### Cocoapods
+pod 'SHPopup', '~> 1.0'
+### Or
 Just drag and drop the SHPopup.swift file from SHPopup folder to your project.
 
 ## Usage
+
+### Main viewcontroller must be embed in a navigation controller
 
 ### Set Popup View
  Set a viewcontroller as popup view using setPopup function
