@@ -48,5 +48,4 @@ class SHPopupSampleOneVC: UIViewController,UICollectionViewDelegate,UICollection
     @IBAction func dismissAction(_ sender: UIButton) {
         sampleOneDelegate?.dismiss()
     }
-    
 }

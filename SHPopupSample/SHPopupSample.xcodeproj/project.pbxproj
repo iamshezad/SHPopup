@@ -12,12 +12,12 @@
 		024521FC1FE0E75E009B082D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024521FB1FE0E75E009B082D /* Assets.xcassets */; };
 		024521FF1FE0E75E009B082D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024521FD1FE0E75E009B082D /* LaunchScreen.storyboard */; };
 		024522071FE0F321009B082D /* SHPopupMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024522061FE0F321009B082D /* SHPopupMainVC.swift */; };
-		024522091FE0F981009B082D /* SHPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024522081FE0F981009B082D /* SHPopup.swift */; };
 		0245220B1FE0FA50009B082D /* SHPopupOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0245220A1FE0FA50009B082D /* SHPopupOptionCell.swift */; };
 		0245220D1FE1032B009B082D /* SHPopupSampleOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0245220C1FE1032B009B082D /* SHPopupSampleOneVC.swift */; };
 		024522111FE10594009B082D /* SHPopupCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024522101FE10594009B082D /* SHPopupCollectionCell.swift */; };
 		02526EF31FE24B4F00E563F2 /* SHPopupSampleTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02526EF21FE24B4F00E563F2 /* SHPopupSampleTwoVC.swift */; };
 		02526EF51FE25A5600E563F2 /* SHSamplePopupThreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02526EF41FE25A5600E563F2 /* SHSamplePopupThreeVC.swift */; };
+		02E03E3F1FEA6B2000A9903F /* SHPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E03E3E1FEA6B2000A9903F /* SHPopup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +28,12 @@
 		024521FE1FE0E75E009B082D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		024522001FE0E75E009B082D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024522061FE0F321009B082D /* SHPopupMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHPopupMainVC.swift; sourceTree = "<group>"; };
-		024522081FE0F981009B082D /* SHPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHPopup.swift; sourceTree = "<group>"; };
 		0245220A1FE0FA50009B082D /* SHPopupOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHPopupOptionCell.swift; sourceTree = "<group>"; };
 		0245220C1FE1032B009B082D /* SHPopupSampleOneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHPopupSampleOneVC.swift; sourceTree = "<group>"; };
 		024522101FE10594009B082D /* SHPopupCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHPopupCollectionCell.swift; sourceTree = "<group>"; };
 		02526EF21FE24B4F00E563F2 /* SHPopupSampleTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHPopupSampleTwoVC.swift; sourceTree = "<group>"; };
 		02526EF41FE25A5600E563F2 /* SHSamplePopupThreeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHSamplePopupThreeVC.swift; sourceTree = "<group>"; };
+		02E03E3E1FEA6B2000A9903F /* SHPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHPopup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 		024521F31FE0E75E009B082D /* SHPopupSample */ = {
 			isa = PBXGroup;
 			children = (
-				024522081FE0F981009B082D /* SHPopup.swift */,
+				02E03E3E1FEA6B2000A9903F /* SHPopup.swift */,
 				024521F41FE0E75E009B082D /* AppDelegate.swift */,
 				024521F81FE0E75E009B082D /* Main.storyboard */,
 				024521FB1FE0E75E009B082D /* Assets.xcassets */,
@@ -155,13 +155,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				024522071FE0F321009B082D /* SHPopupMainVC.swift in Sources */,
-				024522091FE0F981009B082D /* SHPopup.swift in Sources */,
 				0245220B1FE0FA50009B082D /* SHPopupOptionCell.swift in Sources */,
 				024522111FE10594009B082D /* SHPopupCollectionCell.swift in Sources */,
 				0245220D1FE1032B009B082D /* SHPopupSampleOneVC.swift in Sources */,
 				024521F51FE0E75E009B082D /* AppDelegate.swift in Sources */,
 				02526EF31FE24B4F00E563F2 /* SHPopupSampleTwoVC.swift in Sources */,
 				02526EF51FE25A5600E563F2 /* SHSamplePopupThreeVC.swift in Sources */,
+				02E03E3F1FEA6B2000A9903F /* SHPopup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

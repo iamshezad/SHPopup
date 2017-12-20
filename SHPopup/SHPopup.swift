@@ -233,7 +233,7 @@ extension UIViewController {
         }else{
             popupView?.frame.size = CGSize(width: (mainView.bounds.width/2), height: (mainView.bounds.height/2))
         }
-        switch controller.popupAlign ?? .bottom {
+        switch controller.popupAlign ?? .center {
         case .top:
             popupView?.frame.origin = CGPoint(x:(mainView.frame.size.width/2)-((popupView?.bounds.width)!/2), y: 64)
         case .center:
@@ -253,6 +253,9 @@ extension UIViewController {
         if let animationType = controller.popupAnimation{
             self.animationType = animationType
             self.setupPresentAnimation(type: animationType)
+        }else{
+            animationType = .bottom
+            self.setupPresentAnimation(type: animationType!)
         }
     }
     
@@ -379,7 +382,7 @@ extension UIViewController {
         if let popupView = popupView {
             let frame = popupView.frame
             popupView.frame.origin.y = mainView.frame.origin.y - popupView.frame.height
-            UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+            UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.5, options: .curveEaseIn, animations: {
                 popupView.frame = frame
             }, completion: nil)
         }
@@ -390,7 +393,7 @@ extension UIViewController {
         if let popupView = popupView {
             let frame = popupView.frame
             popupView.frame.origin.y = mainView.frame.height + popupView.frame.height
-            UIView.animate(withDuration: 0.6, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+            UIView.animate(withDuration: 0.6, delay: 0.0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.5, options: .curveEaseIn, animations: {
                 popupView.frame = frame
             }, completion: nil)
         }
