@@ -1,10 +1,10 @@
 # SHPopup
 SHPop is lightweight library used for popup view
 
-[![Version](https://img.shields.io/cocoapods/v/SHSnackBarView.svg?style=flat)](https://cocoapods.org/pods/SHPop)
-[![Cocoapods](http://img.shields.io/badge/Cocoapods-available-green.svg?style=flat)](https://cocoapods.org/pods/SHPop)
+[![Version](https://img.shields.io/cocoapods/v/SHSnackBarView.svg?style=flat)](https://cocoapods.org/pods/SHPopup)
+[![Cocoapods](http://img.shields.io/badge/Cocoapods-available-green.svg?style=flat)](https://cocoapods.org/pods/SHPopup)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://cocoapods.org/pods/SHPop)
+[![Platform](https://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://cocoapods.org/pods/SHPopup)
 
 
 ### Sample One
