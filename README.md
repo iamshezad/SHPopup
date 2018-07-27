@@ -6,6 +6,9 @@ SHPop is lightweight library used for popup view
 [![Platform](https://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://cocoapods.org/pods/SHPopup)
 
 
+<img src="/Screenshots/mockup.png" />
+
+
 ### Sample One
 <img src="/Screenshots/SampleOne.gif" />
 
