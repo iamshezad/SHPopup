@@ -220,7 +220,7 @@ extension UIViewController {
         let dismissButton = UIButton(frame: mainView.bounds)
         containerView.addSubview(dismissButton)
         if controller.touchDismiss ?? true{
-            dismissButton.addTarget(self, action: #selector(UIViewController.dismissPopupView), for: UIControlEvents.touchUpInside)
+            dismissButton.addTarget(self, action: #selector(UIViewController.dismissPopupView), for: UIControl.Event.touchUpInside)
         }
         
         if let cornerRadius = controller.popupCorner {
@@ -294,10 +294,10 @@ extension UIViewController {
         
         if let viewController = viewController {
             
-            self.addChildViewController(viewController)
+            self.addChild(viewController)
             viewController.view.frame = self.view.bounds
             self.addSubview(subView: viewController.view, toView: self.popupView!)
-            viewController.didMove(toParentViewController: self)
+            viewController.didMove(toParent: self)
             return viewController
         }
         
@@ -306,10 +306,10 @@ extension UIViewController {
     
     //Remove popup
     fileprivate func removeAllChildViewController() {
-        self.childViewControllers.forEach({ (controller) in
+        self.children.forEach({ (controller) in
             controller.view.removeFromSuperview()
-            controller.willMove(toParentViewController: nil)
-            controller.removeFromParentViewController()
+            controller.willMove(toParent: nil)
+            controller.removeFromParent()
         })
     }
     
