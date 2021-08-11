@@ -97,7 +97,15 @@ Download the Sample project.
 
 ## Contact
 
-Mail me @: shezadahamed95@gmail.com
+<b>Shezad Ahamed</b>
+
+Follow and contact me on:
+
+ <a  href="mailto:iamshezad.dev@gmail.com"><img src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white"> </a>   <a  href="https://www.instagram.com/iamshezad.dev/"><img src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white"></a>   <a href="https://www.linkedin.com/in/iamshezad/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" ></a>
+
+If you like my content, please consider buying me a coffee. Thank you for your support!
+
+<a href="https://www.buymeacoffee.com/iamshezad.dev" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" alt="Buy Me A Coffee" width="174" height="41" ></a>
 
 ## Acknowledge
 
